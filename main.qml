@@ -70,7 +70,17 @@ Cat{
             myCat.setColor(catColor.text);
             txtShow.text="Tiedot tallennettiin"
         }
-    }
+        background:
+            Rectangle {
+                implicitWidth: 100
+                implicitHeight: 40
+                color: "#64ADC6"
+                border.color: "#26282a"
+                border.width: 1
+                radius: 4
+            }
+       }
+
     Button {
         id: btnShow
         x: 40
@@ -82,8 +92,16 @@ Cat{
         onClicked: {
             txtShow.text="Nimi="+myCat.getName+" väri="+myCat.getColor
         }
-    }
-
+        background:
+            Rectangle {
+                implicitWidth: 100
+                implicitHeight: 40
+                color: "#64ADC6"
+                border.color: "#26282a"
+                border.width: 1
+                radius: 4
+            }
+       }
     Text {
         id: txtShow
         x: 40
