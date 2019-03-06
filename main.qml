@@ -11,8 +11,11 @@ ApplicationWindow {
 
 Cat{
     id:myCat
+    Component.onCompleted: {
+        myCat.setName("Mirri");
+        myCat.setColor("black");
+    }
 }
-
 
 
     Text {
